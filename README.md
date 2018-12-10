@@ -1,2 +1,2 @@
-# treehouse-fewdv1-project8
+# Treehouse FEWDv1 Project 8  
 Project 8 (v1) - SVG Animations
