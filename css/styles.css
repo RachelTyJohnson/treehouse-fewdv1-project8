@@ -1,0 +1,210 @@
+@keyframes wobble {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(1);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes growshrink {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  color: #111;
+  background: #edeff0;
+  background-image: url("../svgs/background.svg");
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+  height: 100%;
+  /* new line */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 30px 50px;
+  font-size: 0.8em;
+}
+@media (min-width: 425px) {
+  nav {
+    justify-content: left;
+  }
+}
+nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #269b70;
+}
+nav .navlogo {
+  transition: fill 0.3s;
+}
+nav a:hover .navlogo {
+  fill: #269b70;
+  animation: wobble 500ms infinite linear;
+  transform-origin: center center;
+}
+nav a + a {
+  margin-left: 20px;
+}
+nav svg {
+  height: 15px;
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+#svglogo {
+  width: 140px;
+}
+#svglogo .st1 {
+  display: none;
+}
+@media (min-width: 425px) {
+  #svglogo .st1 {
+    display: block;
+  }
+}
+#svglogo:hover .st1 {
+  animation: wobble 1s infinite linear;
+  transform-origin: center center;
+}
+#svglogo:hover .st2 {
+  animation: growshrink 500ms infinite linear;
+  transform-origin: center center;
+}
+
+header {
+  padding-top: 10px;
+}
+
+header nav {
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+main {
+  padding-top: 50px;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.svgtext {
+  color: #BA8058;
+  font-size: 1.8em;
+  margin-top: 0;
+}
+@media (min-width: 425px) {
+  .svgtext {
+    display: none;
+  }
+}
+
+main h2 {
+  font-size: 28px;
+}
+
+.symbolholder {
+  display: none;
+}
+
+.corgis {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.corgis svg {
+  margin: 10px;
+}
+
+.nose_and_eyes {
+  fill: #2D3339;
+}
+
+.brows {
+  fill: #DA8058;
+}
+
+.white {
+  fill: #FBFEFF;
+}
+
+.sable {
+  color: #B97F5B;
+}
+
+.fawn {
+  color: #E9AA82;
+}
+
+.red {
+  color: #834B29;
+}
+
+.stone {
+  color: #52595E;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+/*# sourceMappingURL=styles.css.map */
